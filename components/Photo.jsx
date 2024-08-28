@@ -20,7 +20,7 @@ const Photo = () => {
                 opacity: 1,
                 transition: { delay: 2.4, duration: 0.4, ease:"easeInOut"},
             }}
-            className="w-[300px]  h-[200px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute" style={{top:"50px"}}>
+            className="w-[300px]  h-[200px] xl:w-[502px] xl:h-[390px] mix-blend-lighten absolute" style={{top:"50px"}}>
             <Image 
                 src="/assets/photo.png"
                 priority
