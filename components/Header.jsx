@@ -1,9 +1,9 @@
-
 import Link from "next/link";
 import { Button } from './ui/button';
 import Nav from './Nav';
 import MobileNav from "./MobileNav";
-
+import Contact from "@/app/contact/page";
+ 
 
 const Header = () => {
   return (
@@ -18,7 +18,7 @@ const Header = () => {
             {/* desktop nav & hire me button*/}
             <div className="hidden xl:flex items-center gap-8">
                  <Nav />
-                 <Link href="/Contact">
+                 <Link href="/contact">
                     <Button>Hire Me</Button>
                  </Link>
             </div>
