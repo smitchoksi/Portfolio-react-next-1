@@ -50,7 +50,7 @@ const Contact = () => {
         () => {
           console.log('SUCCESS!');
           e.target.reset();
-          alert("Email Sent !");
+          alert("Sent Successfully");
         },
         (error) => {
           console.log('FAILED...', error.text);
