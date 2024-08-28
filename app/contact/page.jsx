@@ -79,14 +79,14 @@ const Contact = () => {
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" name='your_firstsname' />
-                <Input type="lastname" placeholder="Lastname" name="your_lastname" />
-                <Input type="email" placeholder="Email address" name='your_email' />
-                <Input type="phone" placeholder="Phone number" name="your_phonenumber"/>
+                <Input required type="firstname" placeholder="Firstname" name='your_firstsname'  />
+                <Input required type="lastname" placeholder="Lastname" name="your_lastname" />
+                <Input required type="email" placeholder="Email address" name='your_email' />
+                <Input required type="phone" placeholder="Phone number" name="your_phonenumber"/>
               </div>
               {/* select */}
-              <Select name="your_service">
-                <SelectTrigger className="w-full">
+              <Select required  name="your_service">
+                <SelectTrigger  className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
                 <SelectContent>
@@ -99,7 +99,7 @@ const Contact = () => {
                 </SelectContent>
               </Select>
               {/* textarea */}
-              <Textarea className="h-[200px]" placeholder="Type your message here." name='message' />
+              <Textarea required className="h-[200px]" placeholder="Type your message here." name='message' />
               {/*btn */}
               <Button size="md" className="max-w-40">Send message</Button>
             </form>
