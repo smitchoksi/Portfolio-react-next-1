@@ -13,14 +13,14 @@ const Photo = () => {
             transition: { delay: 2, duration: 0.4, ease:"easeIn"},
         }}
       >
-        {/* image */}
+        {/* image smi1 mate w-300px h-506  */}
         <motion.div
             initial={{ opacity: 0}}
             animate={{
                 opacity: 1,
                 transition: { delay: 2.4, duration: 0.4, ease:"easeInOut"},
             }}
-            className="w-[300px]  h-[250px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
+            className="w-[300px]  h-[200px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute" style={{top:"50px"}}>
             <Image 
                 src="/assets/photo.png"
                 priority
@@ -31,7 +31,7 @@ const Photo = () => {
             />
         </motion.div>
 
-        {/* circle */}
+        {/* circle */ }
         <motion.svg className="w-[300px] xl:w-[506px] h-[300px] xl:h-[506px]"
             fill="transparent"
             viewBox="0 0 508 508"
