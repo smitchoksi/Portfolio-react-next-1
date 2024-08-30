@@ -19,7 +19,7 @@ const projects = [
     num: "01",
     category: "frontend",
     title: "project 1",
-    description: "Amazing Front-End Website Using Of React",
+    description: "Amazing Food-App Front-End Website Using Of React",
     stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "Javascript"}, { name: "React"}],
     image: "/assets/work/thumb1.png",
     live: "https://foodappsmit.netlify.app/",
@@ -39,11 +39,11 @@ const projects = [
     num: "03",
     category: "frontend",
     title: "project 3",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis aperiam itaque culpa rem accusamus mollitia voluptas nisi.",
-    stack: [{name: 'Next.js'}, { name: "Tailwind.css"}],
+    description: "Amazing Burger page Design",
+    stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "React"}],
     image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    live: "https://burgerappwithsmit.netlify.app/",
+    github: "https://github.com/smitchoksi/Burgerappwithsmit",
   },
 ];
 
@@ -67,7 +67,7 @@ const Work = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-[30px]">
-          <div className="w-full xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
+          <div className="w-full  xl:w-[50%] xl:h-[460px] flex flex-col xl:justify-between order-2 xl:order-none">
            <div className="flex flex-col gap-[30px] h-[50%]"> 
               {/* outline num */}
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
