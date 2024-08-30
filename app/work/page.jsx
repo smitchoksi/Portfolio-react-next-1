@@ -27,13 +27,13 @@ const projects = [
   },
   {
     num: "02",
-    category: "fullstack",
+    category: "Portfolio",
     title: "project 2",
-    description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis aperiam itaque culpa rem accusamus mollitia voluptas nisi.",
-    stack: [{name: 'Next.js'}, { name: "Tailwind.css"}, { name: "Node.js"}],
+    description: "Amazing Portfolio Website Using react & emali.js",
+    stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "React"},{ name: "Email.js"}],
     image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    live: "https://portreactwithsmit.netlify.app/",
+    github: "https://github.com/smitchoksi/Portwithreact",
   },
   {
     num: "03",
