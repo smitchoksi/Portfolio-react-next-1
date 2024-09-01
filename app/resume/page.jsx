@@ -5,9 +5,10 @@ import {
     FaCss3,
     FaJs,
     FaReact,
-    FaFigma,
-    FaNodeJs,
+    FaBootstrap,
+    FaPython,
 } from "react-icons/fa";
+
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
@@ -15,7 +16,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 // about data
 const about = {
   title: "About me",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis impedit repellendus, ratione similique libero accusantium quis maiores",
+  description: "I am a passionate Web developer with a strong background in Front-End Developement, dedicated to delivering innovative solutions that drive success and create lasting impact.",
   info:[
     {
       fieldName: "Name",
@@ -48,10 +49,11 @@ const about = {
   ],
 };
 
+
 const experience = {
   icon: '/assets/resume/badge.svg',
   title: 'My experience',
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis impedit repellendus, ratione similique libero accusantium quis maiores",
+  description:"With 2 years of experience in web development, I have successfully delivered my web projects, consistently exceeding client and organizational expectations.",
   items: [
     {
       company: "Infolabze.",
@@ -134,7 +136,11 @@ const education = {
 // skills data
 const skills = {
   title:"My skills",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis impedit repellendus, ratione similique libero accusantium quis maiores",
+  description: "I excel at identifying complex challenges and developing innovative solutions that drive project success...",
+        
+    
+    
+   
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -161,12 +167,12 @@ const skills = {
       name: "tailwind.css",
     },
     {
-      icon: <FaNodeJs />,
-      name: "node.js",
+      icon: <FaBootstrap />,
+      name: "Bootstrap",
     },
     {
-      icon: <FaFigma />,
-      name: "figma",
+      icon: <FaPython />,
+      name: "Python",
     },
   ]
 };
@@ -293,7 +299,7 @@ const Resume = () => {
                             <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                               {about.info.map((item, index) => {
                                 return (
-                                  <li key={index} className="flex items-center justify-center xl:justify-start gap-4">
+                                  <li key={index} className="flex pl-20 xl:justify-start gap-4">
                                     <span className="text-white/60" >{item.fieldName}  </span>
                                     <span className="text-xl">{item.fieldValue}</span>
                                   </li>

@@ -7,28 +7,29 @@ const services = [
     num: "01",
     title: "web Development",
     description: 
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-    href: ""
+    "User-Centered: We prioritize user experience, creating intuitive and engaging websites that drive conversions and customer satisfaction.",
+    href: "https://foodappsmit.netlify.app/"
   },
+  
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Python Development",
     description: 
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-    href: ""
+    "Web Development: From Flask to Django, we use Python’s powerful web frameworks to create dynamic, secure, and scalable web applications.",
+    href: "https://portreactwithsmit.netlify.app/"
   },
   {
     num: "03",
     title: "web Design",
     description: 
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
-    href: ""
+    "Web Design: We create responsive websites that look beautiful and function perfectly on any device, from desktops to smartphones.",
+    href: "https://burgerappwithsmit.netlify.app/"
   },
   {
     num: "04",
-    title: "SEO",
+    title: "Full Stack-Develop",
     description: 
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
+    "We provide comprehensive full stack development services, delivering end-to-end solutions that seamlessly integrate front-end user experiences with powerful back-end functionality.",
     href: ""
   },
 ];
