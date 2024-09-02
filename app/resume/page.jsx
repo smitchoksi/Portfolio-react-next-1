@@ -304,7 +304,7 @@ const Resume = () => {
                             <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
                               {about.info.map((item, index) => {
                                 return (
-                                  <li key={index} className="flex pl-20 xl:justify-start gap-3">
+                                  <li key={index} className="flex pl-20 xl:pl-0  xl:justify-start gap-3">
                                     <span className="text-white/60" >{item.fieldName}  </span>
                                     <span className="text-xl">{item.fieldValue}</span>
                                   </li>
