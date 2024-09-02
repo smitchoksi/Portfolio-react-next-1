@@ -5,12 +5,11 @@ import Link from "next/link";
 const services = [
   {
     num: "01",
-    title: "web Development",
+    title: "Full Stack-Develop",
     description: 
-    "User-Centered: We prioritize user experience, creating intuitive and engaging websites that drive conversions and customer satisfaction.",
-    href: "https://foodappsmit.netlify.app/"
-  },
-  
+    "We provide comprehensive full stack development services, delivering end-to-end solutions that seamlessly integrate front-end user experiences with powerful back-end functionality.",
+    href: "https://housecarehub.pythonanywhere.com/"
+  }, 
   {
     num: "02",
     title: "Python Development",
@@ -18,19 +17,20 @@ const services = [
     "Web Development: From Flask to Django, we use Python’s powerful web frameworks to create dynamic, secure, and scalable web applications.",
     href: "https://portreactwithsmit.netlify.app/"
   },
+  
   {
     num: "03",
-    title: "web Design",
+    title: "Web Design",
     description: 
     "Web Design: We create responsive websites that look beautiful and function perfectly on any device, from desktops to smartphones.",
     href: "https://burgerappwithsmit.netlify.app/"
   },
   {
     num: "04",
-    title: "Full Stack-Develop",
+    title: "Web Development",
     description: 
-    "We provide comprehensive full stack development services, delivering end-to-end solutions that seamlessly integrate front-end user experiences with powerful back-end functionality.",
-    href: ""
+    "User-Centered: We prioritize user experience, creating intuitive and engaging websites that drive conversions and customer satisfaction.",
+    href: "https://foodappsmit.netlify.app/"
   },
 ];
 

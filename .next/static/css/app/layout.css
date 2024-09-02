@@ -870,9 +870,6 @@ video {
 .items-center {
   align-items: center;
 }
-.justify-start {
-  justify-content: flex-start;
-}
 .justify-center {
   justify-content: center;
 }
@@ -1094,12 +1091,6 @@ video {
 }
 .pt-4 {
   padding-top: 1rem;
-}
-.pr-20 {
-  padding-right: 5rem;
-}
-.pl-0 {
-  padding-left: 0px;
 }
 .text-center {
   text-align: center;
@@ -1862,16 +1853,16 @@ video {
     padding-bottom: 6rem;
   }
 
+  .xl\:pl-0 {
+    padding-left: 0px;
+  }
+
   .xl\:pt-0 {
     padding-top: 0px;
   }
 
   .xl\:pt-8 {
     padding-top: 2rem;
-  }
-
-  .xl\:pl-0 {
-    padding-left: 0px;
   }
 
   .xl\:text-left {

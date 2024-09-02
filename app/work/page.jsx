@@ -17,23 +17,23 @@ import WorkSliderBtns from "@/components/ui/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Full-stack",
     title: "project 1",
+    description: "House Care Hub",
+    stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "Python"},{ name: "Django"},{ name: "Bootstrap"}],
+    image: "/assets/work/thumb4.png",
+    live: "https://housecarehub.pythonanywhere.com/",
+    github: "https://github.com/smitchoksi/housecarehub",
+  },
+  {
+    num: "02",
+    category: "frontend",
+    title: "project 2",
     description: "Amazing Food-App Front-End Website Using Of React",
     stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "Javascript"}, { name: "React"}],
     image: "/assets/work/thumb1.png",
     live: "https://foodappsmit.netlify.app/",
     github: "https://github.com/smitchoksi/foodappsmit",
-  },
-  {
-    num: "02",
-    category: "Portfolio",
-    title: "project 2",
-    description: "Amazing Portfolio Website Using react & emali.js",
-    stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "React"},{ name: "Email.js"}],
-    image: "/assets/work/thumb2.png",
-    live: "https://portreactwithsmit.netlify.app/",
-    github: "https://github.com/smitchoksi/Portwithreact",
   },
   {
     num: "03",
@@ -44,6 +44,16 @@ const projects = [
     image: "/assets/work/thumb3.png",
     live: "https://burgerappwithsmit.netlify.app/",
     github: "https://github.com/smitchoksi/Burgerappwithsmit",
+  },
+  {
+    num: "04",
+    category: "Portfolio",
+    title: "project 4",
+    description: "Amazing Portfolio Website Using react & emali.js",
+    stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "React"},{ name: "Email.js"}],
+    image: "/assets/work/thumb2.png",
+    live: "https://portreactwithsmit.netlify.app/",
+    github: "https://github.com/smitchoksi/Portwithreact",
   },
 ];
 

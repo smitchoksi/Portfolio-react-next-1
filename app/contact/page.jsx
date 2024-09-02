@@ -1,5 +1,6 @@
 "use client";
 
+
 import { Button } from "@/components/ui/button";
 import { Input } from  "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -41,6 +42,8 @@ import { useRef } from "react";
 const Contact = () => {
   const form = useRef();
 
+  
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -81,7 +84,9 @@ const Contact = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <Input required type="firstname" placeholder="Firstname" name='your_firstsname'  />
                 <Input required type="lastname" placeholder="Lastname" name="your_lastname" />
-                <Input required type="email" placeholder="Email address" name='your_email' />
+                <Input required type="email" placeholder="Email address"  pattern="[a-z0-9._%+\-]+@[-z0-9.\-]+\.[a-z]{2,}$" name='your_email' 
+                  
+                />
                 <Input required type="phone" placeholder="Phone number" name="your_phonenumber"/>
               </div>
               {/* select */}
