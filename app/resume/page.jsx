@@ -29,11 +29,7 @@ const about = {
     },
     {
       fieldName: "Experience",
-      fieldValue: "2+ Years",
-    },
-    {
-      fieldName: "Skype",
-      fieldValue: "luke.01",
+      fieldValue: "2 + Years",
     },
     {
       fieldName: "Email",
@@ -45,7 +41,7 @@ const about = {
     },
     {
       fieldName: "Lanquages",
-      fieldValue: "English, Hindi",
+      fieldValue: "English, Hindi,Gujarati",
     },
   ],
 };
@@ -64,32 +60,37 @@ const experience = {
     {
       company: "Sharda Computer",
       position: "Front-End Developer Intern",
-      duration: "2024 - Present",
+      duration: "2024",
     },
     {
       company: "E-commerce Startup",
       position: "Freelance Web Developer",
-      duration: "2023 - 2024",
+      duration: "2023 - Present",
     },
     {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2023 - 2024",
+      company: "Sharda Computer",
+      position: "Advance Javascript Intern",
+      duration: "2024",
     },
     {
-      company: "Tech Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
+      company: "Sharda Computer",
+      position: "React.JS Intern",
+      duration: "2024",
     },
     {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018 - 2019",
+      company: "Infolabze.",
+      position: "Full-Stack Development Intern",
+      duration: "2023-2024",
     },
     {
-      company: "Software Development Firm",
+      company: "Infolabze.",
+      position: "Django Intern",
+      duration: "2023-2024",
+    },
+    {
+      company: "Mala's",
       position: "Junior Developer",
-      duration: "2020 - 2021",
+      duration: "present",
     },
   ],
 }
@@ -98,7 +99,7 @@ const experience = {
 const education = {
   icon: '/assets/resume/cap.svg',
   title: 'My education',
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis impedit repellendus, ratione similique libero accusantium quis maiores",
+  description: "My education has provided me with a strong foundation of knowledge and skills that I apply in every aspect of my life.",
   items: [
     {
       institution: "Khayti Foundation",
@@ -106,28 +107,33 @@ const education = {
       duration: "2021 - 2023",
     },
     {
+      institution: "Sardar Patel High School",
+      degree: "High School",
+      duration: "2020 - 2021",
+    },
+    {
       institution: "Infolabze",
       degree: "Certified Python Developer",
-      duration: "2023",
+      duration: "2023-2024",
+    },
+    {
+      institution: "Infolabze",
+      degree: "Certified Full-Stack Developer",
+      duration: "2023-2024",
+    },
+    {
+      institution: "Infolabze",
+      degree: "Certified Django Developer",
+      duration: "2023-2024",
     },
     {
       institution: "Sharda Computer",
       degree: "Certified React Developer",
-      duration: "2023",
+      duration: "2024",
     },
     {
       institution: "Sharda computer",
       degree: "Certified Advanced JS ",
-      duration: "2023",
-    },
-    {
-      institution: "Infolabze",
-      degree: "Certified Python Developer",
-      duration: "2023",
-    },
-    {
-      institution: "Infolabze",
-      degree: "Certified Python Developer",
       duration: "2024",
     },
   ],

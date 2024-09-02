@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Button } from './ui/button';
 import Nav from './Nav';
 import MobileNav from "./MobileNav";
-import Contact from "@/app/contact/page";
  
 
 const Header = () => {
