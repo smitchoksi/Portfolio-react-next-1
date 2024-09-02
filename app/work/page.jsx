@@ -19,7 +19,7 @@ const projects = [
     num: "01",
     category: "Full-stack",
     title: "project 1",
-    description: "House Care Hub",
+    description: "Provide Home related Services",
     stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "Python"},{ name: "Django"},{ name: "Bootstrap"}],
     image: "/assets/work/thumb4.png",
     live: "https://housecarehub.pythonanywhere.com/",
