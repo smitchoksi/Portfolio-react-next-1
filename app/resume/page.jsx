@@ -128,7 +128,7 @@ const education = {
     {
       institution: "Infolabze",
       degree: "Certified Python Developer",
-      duration: "2023",
+      duration: "2024",
     },
   ],
 
