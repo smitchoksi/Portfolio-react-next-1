@@ -9,6 +9,7 @@ import {
     FaPython,
 } from "react-icons/fa";
 
+import { DiDjango } from "react-icons/di";
 
 import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
 
@@ -173,6 +174,10 @@ const skills = {
     {
       icon: <FaPython />,
       name: "Python",
+    },
+    {
+      icon: <DiDjango />,
+      name: "Django",
     },
   ]
 };
