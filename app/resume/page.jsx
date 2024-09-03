@@ -7,12 +7,13 @@ import {
     FaReact,
     FaBootstrap,
     FaPython,
+
+    FaDatabase,
 } from "react-icons/fa";
 
 import { DiDjango } from "react-icons/di";
 
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
-
+import { SiTailwindcss, SiNextdotjs, SiMysql } from "react-icons/si";
 
 // about data
 const about = {
@@ -184,6 +185,14 @@ const skills = {
     {
       icon: <DiDjango />,
       name: "Django",
+    },
+    {
+      icon: <FaDatabase />,
+      name: "Database",
+    },
+    {
+      icon: <SiMysql />,
+      name: "MySql",
     },
   ]
 };
