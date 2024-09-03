@@ -42,7 +42,7 @@ const about = {
     },
     {
       fieldName: "Lanquages",
-      fieldValue: "English, Hindi,Gujarati",
+      fieldValue: "English, Hindi",
     },
   ],
 };
