@@ -46,7 +46,7 @@ const Home = () => {
                   <Button variant="outline"
                     size="lg" className="uppercase flex items-center gap-2"
                   >
-                    <span>Download CV</span>
+                    <a href="/cv.pdf" download="Smit_CV.pdf"><span>Download CV</span></a>
                     <FiDownload className="text-xl" />
                   </Button>
                   {/*<Pdf /> */}
