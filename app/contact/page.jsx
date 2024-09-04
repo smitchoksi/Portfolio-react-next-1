@@ -35,7 +35,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Maninagar, Ahemedabad 380008",
+    description: "Maninagar-380008, Ahmedabad",
     href: "https://www.google.co.in/maps/place/Chandranagar+Society,+Basant+Nagar,+Maninagar,+Ahmedabad,+Gujarat+380008/@22.9902167,72.5972728,17z/data=!3m1!4b1!4m6!3m5!1s0x395e85eed0f3af17:0x1bae4995dcf4dc14!8m2!3d22.9902118!4d72.5998477!16s%2Fg%2F11c63zbfqt?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D",
   },
 ];
