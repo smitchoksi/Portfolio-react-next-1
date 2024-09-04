@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState } from 'react';
 
 import { Button } from "@/components/ui/button";
 import { Input } from  "@/components/ui/input";
@@ -43,23 +44,88 @@ import { useRef } from "react";
 const Contact = () => {
   const form = useRef();
 
+  const initialFormState = {
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    select: '',
+    Textarea: '',
+  };
+
+  const [formValues, setFormValues] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    select: '',
+    Textarea: '',
+  });
+
+  const [errors, setErrors] = useState({});
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormValues({
+      ...formValues,
+      [name]: value,
+    });
+  };
+
+  const validate = () => {
+    let errors = {};
+
+    if (!formValues.firstName.trim()) {
+      errors.firstName = 'First name is required';
+    } else if (formValues.firstName.length < 3) {
+      errors.firstName = 'First name must contain at least 3 word';
+    }
+
+    if (!formValues.lastName.trim()) {
+      errors.lastName = 'Last name is required';
+    } else if (formValues.lastName.length < 3) {
+      errors.lastName = 'Last name must contain at least 3 word';
+    }
+
+
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!formValues.email) {
+      errors.email = 'Email is required';
+    } else if (!emailPattern.test(formValues.email)) {
+      errors.email = 'Email is invalid';
+    }
+
+    const phonePattern = /^[0-9]{10}$/;
+    if (!formValues.phoneNumber) {
+      errors.phoneNumber = 'Phone number is required';
+    } else if (!phonePattern.test(formValues.phoneNumber)) {
+      errors.phoneNumber = 'Phone number is invalid';
+    }
+
+
+    return errors;
+  };
+
   
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
+    const validationErrors = validate();
+    setErrors(validationErrors);
+
+    if (Object.keys(validationErrors).length === 0) {
+      emailjs
       .sendForm('service_ltbxg4a', 'template_xmhgher', form.current, 'q_I0sBa_GSWFp6rV1')
-      .then(
-        () => {
-          console.log('SUCCESS!');
-          e.target.reset();
-          alert("Sent Successfully");
-        },
-        (error) => {
-          console.log('FAILED...', error.text);
-        },
-      );
+      // No errors, proceed with form submission
+      alert('Form submitted successfully', setFormValues(initialFormState));
+      // You can perform further actions like sending the form data to a server here.
+      
+    }
+    else{
+      alert("!!Something Went's Wrong!!");
+    }
+      
   };
 
 
@@ -83,19 +149,34 @@ const Contact = () => {
               </p>
               {/* input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input required type="firstname" placeholder="Firstname" name='your_firstsname'  />
-                <Input required type="lastname" placeholder="Lastname" name="your_lastname" />
-                <Input required type="email" placeholder="Email address"  pattern="[a-z0-9._%+\-]+@[-z0-9.\-]+\.[a-z]{2,}$" name='your_email' 
-                  
-                />
-                <Input required type="phone" placeholder="Phone number" name="your_phonenumber"/>
+                <Input required type="text" placeholder="First name"
+                  name="firstName"
+                  value={formValues.firstName}
+                  onChange={handleChange}  />     {errors.firstName && <p>{errors.firstName}</p>}
+
+                <Input required type="text" placeholder="last name"
+                  name="lastName"
+                  value={formValues.lastName}
+                  onChange={handleChange} />              {errors.lastName && <p>{errors.lastName}</p>}
+
+                <Input required type="email" placeholder="Email"
+                  name="email"
+                  value={formValues.email}
+                  onChange={handleChange} 
+                />        {errors.email && <p>{errors.email}</p>}
+
+                <Input required type="text" placeholder="Phone number"
+                  name="phoneNumber"
+                  value={formValues.phoneNumber}
+                  onChange={handleChange}/>         {errors.phoneNumber && <p>{errors.phoneNumber}</p>}
+
               </div>
               {/* select */}
-              <Select required  name="your_service">
+              <Select required name="service" >
                 <SelectTrigger  className="w-full">
                   <SelectValue placeholder="Select a service" />
                 </SelectTrigger>
-                <SelectContent>
+                <SelectContent >
                   <SelectGroup>
                     <SelectLabel>Select a service</SelectLabel>
                     <SelectItem value="Web Development">Web Development</SelectItem>
@@ -109,7 +190,7 @@ const Contact = () => {
               {/* textarea */}
               <Textarea required className="h-[200px]" placeholder="Type your message here." name='message' />
               {/*btn */}
-              <Button size="md" className="max-w-40">Send message</Button>
+              <Button type="submit" size="md" className="max-w-40">Send message</Button>
             </form>
           </div>
           {/* info */}
