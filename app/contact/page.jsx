@@ -24,17 +24,19 @@ const info = [
     icon: <FaPhoneAlt />,
     title: "Phone",
     description: "(+91) 937 4418 071",
-    
+    href: "tel:+919374418071",
   },
   {
     icon: <FaEnvelope />,
     title: "Email",
     description: "smitchoksi219@gmail.com",
+    href: "mailto:smitchoksi219@gmail.com",
   },
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
     description: "Maninagar, Ahemedabad 380008",
+    href: "https://www.google.co.in/maps/place/Chandranagar+Society,+Basant+Nagar,+Maninagar,+Ahmedabad,+Gujarat+380008/@22.9902167,72.5972728,17z/data=!3m1!4b1!4m6!3m5!1s0x395e85eed0f3af17:0x1bae4995dcf4dc14!8m2!3d22.9902118!4d72.5998477!16s%2Fg%2F11c63zbfqt?entry=ttu&g_ep=EgoyMDI0MDgyOC4wIKXMDSoASAFQAw%3D%3D",
   },
 ];
 
@@ -200,7 +202,7 @@ const Contact = () => {
                 return(
                   <li key={index} className="flex items-center gap-6">
                       <div className="w-[52px] h-[52px] xl:w-[72px] xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
-                        <div className="text-[28px]">{item.icon}</div>
+                        <div className="text-[28px]" onClick={() => window.location.href = item.href } style={{cursor:"pointer"}}>{item.icon}</div>
                       </div>
                       <div className="flex-1">
                         <p className="text-white/60">{item.title}</p>
