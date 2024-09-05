@@ -108,7 +108,7 @@ const Work = () => {
                       {index !== project.stack.length - 1 && ","}
                     </li>
                   )
-                })}
+                })} 
               </ul>
               {/* border */}
               <div className="border border-white/20"></div>
@@ -143,7 +143,7 @@ const Work = () => {
               </div>
            </div> 
           </div>
-          <div className="w-full xl:w-[50%]">
+          <div className="w-[100%] xl:w-[50%]">
               <Swiper 
                 spaceBetween={30}
                 slidesPerView={1}
@@ -157,7 +157,7 @@ const Work = () => {
                           {/* overlay */}
                           <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                           { /* image */}
-                          <div className="relative w-full h-full">
+                          <div className="relative sm: w-[20%] h-[40%] md: w-[90%] h-[63%] lg: w-[60%] h-[80%] ">
                              <Image src={project.image} fill className="object-cover" alt=" " />
                           </div>
                         </div>
