@@ -55,6 +55,16 @@ const projects = [
     live: "https://portreactwithsmit.netlify.app/",
     github: "https://github.com/smitchoksi/Portwithreact",
   },
+  {
+    num: "05",
+    category: "Gym Website",
+    title: "project 5",
+    description: "Amazing Gym Website Using only HTML , CSS, JavaScript , Bootstrap",
+    stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "JavaScript"},{ name: "Bootstrap"}],
+    image: "/assets/work/thumb5.png",
+    live: "https://tronfitnesswithsmit.netlify.app/",
+    github: "https://github.com/smitchoksi/TronFitnesswithsmit",
+  },
 ];
 
 const Work = () => {
