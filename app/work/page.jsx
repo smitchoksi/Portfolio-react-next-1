@@ -50,7 +50,7 @@ const projects = [
     category: "Gym Website",
     title: "project 4",
     description: "Amazing Gym Website Using only HTML , CSS, JavaScript , Bootstrap",
-    stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "JavaScript"},{ name: "Bootstrap"}],
+    stack: [{name: 'Html 5'},{ name: "Css 3"},{ name: "JS"},{ name: "Bootstrap"}],
     image: "/assets/work/thumb5.png",
     live: "https://tronfitnesswithsmit.netlify.app/",
     github: "https://github.com/smitchoksi/TronFitnesswithsmit",
