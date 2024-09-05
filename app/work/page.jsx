@@ -47,24 +47,25 @@ const projects = [
   },
   {
     num: "04",
-    category: "Portfolio",
-    title: "project 4",
-    description: "Amazing Portfolio Website Using react & emali.js",
-    stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "React"},{ name: "Email.js"}],
-    image: "/assets/work/thumb2.png",
-    live: "https://portreactwithsmit.netlify.app/",
-    github: "https://github.com/smitchoksi/Portwithreact",
-  },
-  {
-    num: "05",
     category: "Gym Website",
-    title: "project 5",
+    title: "project 4",
     description: "Amazing Gym Website Using only HTML , CSS, JavaScript , Bootstrap",
     stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "JavaScript"},{ name: "Bootstrap"}],
     image: "/assets/work/thumb5.png",
     live: "https://tronfitnesswithsmit.netlify.app/",
     github: "https://github.com/smitchoksi/TronFitnesswithsmit",
   },
+  {
+    num: "05",
+    category: "Portfolio",
+    title: "project 5",
+    description: "Amazing Portfolio Website Using react & emali.js",
+    stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "React"},{ name: "Email.js"}],
+    image: "/assets/work/thumb2.png",
+    live: "https://portreactwithsmit.netlify.app/",
+    github: "https://github.com/smitchoksi/Portwithreact",
+  },
+  
 ];
 
 const Work = () => {
