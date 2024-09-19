@@ -65,6 +65,16 @@ const projects = [
     live: "https://portreactwithsmit.netlify.app/",
     github: "https://github.com/smitchoksi/Portwithreact",
   },
+  {
+    num: "06",
+    category: "Traveling",
+    title: "project 6",
+    description: "Amazing Traveling Website Using react & emali.js",
+    stack: [{name: 'Html 5'}, { name: "Css 3"}, { name: "React"}],
+    image: "/assets/work/thumb6.png",
+    live: "https://travelswithsmit.netlify.app/",
+    github: "https://github.com/smitchoksi/Traveler",
+  },
   
 ];
 
