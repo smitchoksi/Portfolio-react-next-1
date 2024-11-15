@@ -7,9 +7,13 @@ import {
     FaReact,
     FaBootstrap,
     FaPython,
-
+    FaNode,
     FaDatabase,
 } from "react-icons/fa";
+
+import { DiMongodb } from "react-icons/di";
+
+import { RiNextjsFill } from "react-icons/ri";
 
 import { DiDjango } from "react-icons/di";
 
@@ -194,6 +198,19 @@ const skills = {
       icon: <SiMysql />,
       name: "MySql",
     },
+    {
+      icon: <FaNode />,
+      name: "Nodejs",
+    },
+    {
+      icon: <RiNextjsFill />,
+      name: "Nextjs",
+    },
+    {
+      icon: <DiMongodb />,
+      name: "MongoDB",
+    },
+    
   ]
 };
 
